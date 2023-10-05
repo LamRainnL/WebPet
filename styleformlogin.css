@@ -1,0 +1,99 @@
+.login-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #c8e6c9;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  /*   color: #333; */
+  /*   font-style: italic;/*xÃ¡c Ä‘á»‹nh kiá»ƒu chá»¯ in nghiÃªng */
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.remember {
+  display: contents;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 94%;
+  padding: 12px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #f0fff0;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.login-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom right, #8dee95, rgba(1, 87, 155, 0.95));
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.loginkhac {
+  display: contents;
+}
+
+.back-home {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP.Hggo_5muJPpMf9P-KoBrUAAAAA&pid=Api&P=0");
+}
+
+.iconhienmk {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-eye-512.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.iconhienmk.active {
+  background-image: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_remove_red_eye_48px-128.png");
+}
+
+.change {
+  font-style: italic;
+}

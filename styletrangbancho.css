@@ -1,0 +1,62 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  background-color: #f0fff0;
+}
+
+/*Hiển thị danh sách chó*/
+.danhsachcho {
+  display: flex;
+  /*hiển thị trên cùng 1 hàng */
+  flex-wrap: wrap;
+  /* Cho phép các sản phẩm xuống dòng khi không đủ chỗ trên hàng */
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cho {
+  width: 25%;
+  /* Chỉ định 25% chiều rộng của mỗi sản phẩm */
+  text-align: center;
+  margin-bottom: 20px;
+  /* đặt khoảng cách dưới của các sản phẩm để không bị chồng lên nhau */
+  border-radius: 20px;
+  /*bo tròn*/
+}
+
+.cho:hover {
+  box-shadow: 2px 2px 5px 2px #79bf7d;
+}
+
+.cho img {
+  width: 170px;
+  height: 200px;
+  padding: 5px;
+  object-fit: cover;
+  /*để điều chỉnh kích thước của ảnh, sao cho nó bao phủ hoàn toàn khu vực hiển thị*/
+  border-radius: 20px;
+  /*bo tròn*/
+}
+
+.cho a {
+  color: black;
+}
+
+.cho h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cho p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}

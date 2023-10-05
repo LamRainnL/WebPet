@@ -1,0 +1,156 @@
+/*Logo và account*/
+.logo {
+  padding-right: 200px;
+  margin-left: 30px;
+  padding-left: 200px;
+  display: flex;
+  margin-right: 10px; /* đặt khoảng cách giữa logo và tiêu đề */
+  align-items: center;
+  height: 100px;
+}
+.logo img {
+  width: 320px;
+  height: 93px;
+}
+.container {
+  max-width: 100%;
+  height: 50px;
+  background-color: #79bf7d;
+}
+.account {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.account a {
+  color: black;
+  margin-left: 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.account a:hover {
+  text-decoration: none;
+}
+/*Thanh tìm kiếm*/
+.search {
+  display: flex;
+  align-items: center;
+}
+input[type="text"] {
+  border-radius: 20px 0 0 20px; /*bo 1 bên trái*/
+  width: 400px;
+}
+input[type="text"],
+button[type="submit"] {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #63a966;
+  font-size: 16px;
+  line-height: 38px; /*khoảng cách giữa cách dòng*/
+  vertical-align: middle; /*thành phần được canh giữa bởi các thành phần bao ngoài*/
+  margin: 0;
+}
+
+button[type="submit"] {
+  background-color: #79bf7d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  margin-left: -5px;
+  border-radius: 0 20px 20px 0; /*bo 1 phía phải*/
+}
+
+button[type="submit"]:hover {
+  background-color: #c7b620;
+}
+/*Dropdown*/
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.menu-item {
+  position: relative;
+  padding: 16px;
+}
+
+.menu-item > .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 300px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item:hover > .submenu {
+  display: grid;
+}
+
+.submenu {
+  background-color: #f0fff0;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  padding: 10px;
+  max-height: 400px; /* hoặc max-height: none; */
+  overflow: auto;
+}
+
+.submenu li {
+  flex: 1 0 33.33%;
+  border-bottom: none;
+}
+
+.submenu li a {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0fff0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.submenu li a:hover {
+  background-color: #79bf7d;
+}
+
+.container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  align-items: center;
+}
+
+.container a {
+  padding: 9px 12px;
+}
+
+nav {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
